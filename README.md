@@ -1,2 +1,2 @@
-# React-and-Tailwind-Blink
-React-and-Tailwind-Blink
+# React-and-Tailwind-Project-Blink
+React-and-Tailwind-Project-Blink
