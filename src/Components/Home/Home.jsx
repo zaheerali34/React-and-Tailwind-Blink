@@ -16,7 +16,7 @@ export const Home = () => {
            transition={transition}
            viewport={{ once: true }}
           
-          className=" font-bold text-4xl w-[15rem] max-[990px]:m-auto"
+          className=" font-bold text-4xl w-[15rem] max-[990px]:m-auto leading-[3rem]"
           >Full Stack Development <span className=" text-orange-500 -z-50">Websites</span>
           </motion.h1>
 
