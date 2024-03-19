@@ -34,6 +34,10 @@ export const Home = () => {
           className="w-[30rem] shadow-xl rounded-lg z-50"
         />
       </div>
+
+      <div className="w-[3rem] h-[3rem] rounded-md bg-blue-500 shadow-md text-center pt-[0.8rem] fixed right-[1rem] text-white z-50">
+        <button>?</button>
+      </div>
     </>
   );
 };

@@ -8,8 +8,8 @@ export const Header = () => {
           <img src="./assets/asset 0.svg" alt="" />
         </div>
 
-        <nav>
-          <ul className="flex items-center gap-4 cursor-pointer max-[990px]:hidden">
+        <nav className="max-lg:absolute top-[6.2rem] w-[20rem] h-[15rem] bg-white shadow-xl fixed right-[1rem]">
+          <ul className="flex items-center gap-4 cursor-pointer max-xl:flex-col pt-[1.5rem]">
             <li className="text-black font-semibold hover:text-blue-500 transition">
               Home
             </li>
@@ -36,7 +36,14 @@ export const Header = () => {
             Sing Up
           </button>
         </div>
+
+        <button id="menu_btn" className="fixed right-[1rem] top-0 border-none bg-none w-[20px] h-[20px] z-50 cursor-pointer rotate-[90deg]" type="button">
+            <span className="w-[40px] h-[2px] bg-black absolute rotate-[45deg] translate-y-[6px] translate-x-[6px] "></span>
+            <span className="w-[40px] h-[2px] bg-black absolute flex-none"></span>
+            <span className="w-[40px] h-[2px] bg-black absolute rotate-[45deg] translate-y-[6px] translate-x-[-6px] "></span>
+        </button>
       </header>
+
     </>
   );
 };
