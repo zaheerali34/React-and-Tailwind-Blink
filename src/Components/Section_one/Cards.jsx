@@ -16,7 +16,7 @@ export const Cards = ({ imgs, idx }) => {
         whileInView={{ opacity: 1, translateY: "15px" }}
         transition={transition}
         viewport={{ once: true }}
-        className="w-[18rem] h-[22rem] bg-white rounded-2xl shadow-xl mt-[3rem] flex items-start flex-col gap-[2rem] justify-center pt-[0.5rem] pl-[2rem]"
+        className="w-[18rem] h-[22rem] bg-white rounded-2xl shadow-xl mt-[3rem] flex items-start flex-col gap-[2rem] justify-center pt-[0.5rem] pl-[2rem] max-md:w-[100%] max-md:m-[2rem]"
       >
         <img
           src={imgs}

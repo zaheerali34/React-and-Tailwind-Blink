@@ -6,16 +6,16 @@ export const Section_two = () => {
 
     return (
     <>
-      <section className="flex items-center justify-between m-[2rem] mt-[7rem] gap-[40px]">
+      <section className="flex items-center justify-between m-[2rem] mt-[7rem] gap-[40px] max-md:flex-col">
         <motion.img 
         initial={{opacity: 0, translateX: "-50px", transitionDuration: "0.5s"}}
         whileInView={{opacity: 1, translateX: "15px"}}
         transition={transition}
         viewport={{once: true}}
         
-        src="./assets/asset 2.svg" alt="" className="w-[50%]" />
+        src="./assets/asset 2.svg" alt="" className="w-[50%] max-md:w-[100%]" />
 
-        <div className="flex items-start flex-col gap-[0.7rem] ">
+        <div className="flex items-start flex-col gap-[0.7rem] max-md:text-center max-md:items-center">
           <motion.h3 
           initial={{opacity: 0, translateY: "20px"}}
           whileInView={{opacity: 1, translateY: "-10px", transitionDuration: "0.5s"}}
@@ -43,7 +43,7 @@ export const Section_two = () => {
             doloremque laudantium
           </motion.p>
 
-          <div className="flex item-center justify-between">
+          <div className="flex item-center justify-between max-md:flex-col">
             <motion.div 
             initial={{opacity: 0, translateY: "70px"}}
             whileInView={{opacity: 1, translateY: "-10px", transitionDuration: "1.3s"}}
@@ -51,8 +51,8 @@ export const Section_two = () => {
             viewport={{once: true}}
             
             className="flex items-center gap-4 pt-[2rem]">
-              <div className="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-blue-500 p-[1rem] flex items-center justify-center shadow-md shadow-slate-300">
-                <img src="./asset/asset 2.svg" alt="" />
+              <div className="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-blue-500 p-[1rem] flex items-center justify-center shadow-md shadow-slate-300 hover:bg-orange-500 transition">
+                <img src="./assets/dashboard.png" alt="" />
               </div>
 
               <div className="flex items-start flex-col gap-5 w-[50%]">
@@ -72,8 +72,8 @@ export const Section_two = () => {
             viewport={{once: true}}
             
             className="flex items-center gap-4 pt-[2rem]">
-              <div className="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-blue-500 p-[1rem] flex items-center justify-center shadow-md shadow-slate-300">
-                <img src="./asset/asset 2.svg" alt="" />
+              <div className="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-blue-500 p-[1rem] flex items-center justify-center shadow-md shadow-slate-300 hover:bg-orange-500 transition">
+                <img src="./assets/settings.png" alt="" />
               </div>
 
               <div className="flex items-start flex-col gap-5 w-[50%] ">

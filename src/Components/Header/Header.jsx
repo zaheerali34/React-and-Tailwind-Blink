@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 export const Header = () => {
   return (
     <>
-      <header className="w-full h-20 bg-white shadow-md flex items-center justify-between p-12 fixed top-0 left-0 right-0 z-[99]">
-        <div className="w-[7rem] cursor-pointer">
-          <img src="./assets/asset 0.svg" alt="" />
+      <header className="w-full h-20 bg-white shadow-md flex items-center justify-between p-12 fixed top-0 left-0 right-0 z-[99] max-md:w-[100vw]">
+        <div className="w-[7rem] cursor-pointer ">
+          <img src="./assets/asset 0.svg" alt="" className=" max-sm:w-[4rem]" />
         </div>
 
-        <nav className="max-lg:absolute top-[6.2rem] w-[20rem] h-[15rem] bg-white shadow-xl fixed right-[1rem]">
-          <ul className="flex items-center gap-4 cursor-pointer max-xl:flex-col pt-[1.5rem]">
+        <nav className="max-md:absolute max-md:top-[5rem] max-md:right-[-100%]">
+          <ul className="flex items-center gap-4 cursor-pointer max-md:flex-col max-md:w-[20rem] max-md:h-[15rem] max-md:bg-white max-md:shadow-xl max-md:rounded-md max-md:pt-[1.5rem]">
             <li className="text-black font-semibold hover:text-blue-500 transition">
               Home
             </li>
@@ -28,22 +28,19 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-6">
-          <button className=" font-semibold hover:text-blue-500 hover:transition">
+        <div className="flex items-center gap-6 max-sm:gap-2">
+          <button className=" font-semibold hover:text-blue-500 hover:transition max-sm:text-[10px]">
             Sing In
           </button>
-          <button className="font-semibold bg-blue-500 w-[6.5rem] h-[2.5rem] rounded-3xl text-white hover:bg-orange-500 hover:transition">
+          <button className="font-semibold bg-blue-500 w-[6.5rem] h-[2.5rem] rounded-3xl text-white hover:bg-orange-500 hover:transition max-sm:w-[4rem] max-sm:h-[2rem] max-sm:text-[13px]">
             Sing Up
           </button>
+
+          <div>
+            <img src="./assets/menu.png" alt="" className=" min-[769px]:hidden" />
+          </div>
         </div>
-
-        <button id="menu_btn" className="fixed right-[1rem] top-0 border-none bg-none w-[20px] h-[20px] z-50 cursor-pointer rotate-[90deg]" type="button">
-            <span className="w-[40px] h-[2px] bg-black absolute rotate-[45deg] translate-y-[6px] translate-x-[6px] "></span>
-            <span className="w-[40px] h-[2px] bg-black absolute flex-none"></span>
-            <span className="w-[40px] h-[2px] bg-black absolute rotate-[45deg] translate-y-[6px] translate-x-[-6px] "></span>
-        </button>
       </header>
-
     </>
   );
 };

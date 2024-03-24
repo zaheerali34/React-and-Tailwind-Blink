@@ -8,7 +8,7 @@ export const Blog_Card = ({ imgs, idx }) => {
   ];
   return (
     <div className="mt-[2rem] flex items-center justify-between">
-      <div className="w-[18rem] h-[30rem] bg-white shadow-lg rounded-[15px] flex items-start justify-center flex-col gap-[1.5rem] p-[1rem]">
+      <div className="w-[18rem] h-[30rem] bg-white shadow-lg rounded-[15px] flex items-start justify-center flex-col gap-[1.5rem] p-[1rem] max-sm:w-full max-md:h-full max-sm:m-[1rem]">
         <img src={imgs} alt="" className="w-[100%]" />
         <h3 className="text-blue-500 font-semibold text-[15px]">
           Web Solution
